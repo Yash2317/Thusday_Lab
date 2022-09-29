@@ -1,7 +1,7 @@
 //WAP to accept no from user in array and find out average and sum of array numbers.
 import java.util.Scanner;
 
-public class Question_3 {
+public class Question_5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
