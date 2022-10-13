@@ -10,18 +10,18 @@ public class Sum_of_numbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		int sum = 0, num1, n;
-		System.out.print("Enter how many Numbers you want to add: ");
-		num1 = sc.nextInt();
-		System.out.println("Enter " + num1 + " Numbers : ");
-		for (int i = 0; i < num1; i++) {
-			n = sc.nextInt();
-			if (n > 0) {         //to accept online positive numbers
-				sum = sum + n;
+		Scanner sc=new Scanner(System.in);
+		int size, i, sum = 0;
+		System.out.println("enter how many number u want to display");
+		size = sc.nextInt();
+		int arry[] = new int[size];
+		System.out.println("enter the  numbers ");
+		for (i = 0; i < size; i++) {
+			arry[i] = sc.nextInt();
+			if (arry[i] > 0) {           //to accept online positive numbers
+				sum = sum + arry[i];
 			}
 		}
-		System.out.println("Sum of numbers is " + sum);
-
+		System.out.println("sum of positive numbers is = " + sum);
 	}
 }
