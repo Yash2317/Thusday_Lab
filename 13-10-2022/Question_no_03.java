@@ -18,15 +18,15 @@ public class Array {
 		// TODO Auto-generated method stub
 		System.out.print("Enter 2D array size : ");
 		Scanner sc = new Scanner(System.in);
-		int rows = sc.nextInt();// reading the number of elements from the that we want to enter in the row
-		int columns = sc.nextInt();// reading the number of elements from the that we want to enter in the coloumn
+		int rows = sc.nextInt();                            // reading the number of elements from the that we want to enter in the row
+		int columns = sc.nextInt();                         // reading the number of elements from the that we want to enter in the coloumn
 
 		System.out.println("Enter array elements : ");
 
-		int twod[][] = new int[rows][columns];// creates an 2D array in the memory of length taken from the user.
+		int twod[][] = new int[rows][columns];              // creates an 2D array in the memory of length taken from the user.
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < columns; j++) {
-				twod[i][j] = sc.nextInt(); // reading array elements from the user
+				twod[i][j] = sc.nextInt();          // reading array elements from the user
 			}
 		}
 		System.out.print("Original Array:\n");
@@ -40,13 +40,13 @@ public class Array {
 
 		int[][] newtwod = new int[twod[0].length][twod.length];
 
-		for (int i = 0; i < twod.length; i++) {
-			for (int j = 0; j < twod[0].length; j++) {
-				newtwod[j][i] = twod[i][j];
+		for (int i = 0; i < twod.length; i++) {              //loop for row
+			for (int j = 0; j < twod[0].length; j++) {   //loop for coloumn 
+				newtwod[j][i] = twod[i][j];          // interchange row to column
 			}
 		}
 
-		print(newtwod);
+		print(newtwod);                                      // display the interchanged array
 	}
 
 	static void print(int[][] twodm) {
