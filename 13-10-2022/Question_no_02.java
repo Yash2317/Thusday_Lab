@@ -12,14 +12,14 @@ public class Reverse_no {
 
 	public static void rev() {
 		int number, reverse = 0;
-		System.out.println("Enter the number: ");
-		number = sc.nextInt();
+		System.out.println("Enter the number: "); //getting the number from user
+		number = sc.nextInt();                    //this variable only use in this block of body
 		while (number != 0) {
-			int remainder = number % 10;
-			reverse = reverse * 10 + remainder;
-			number = number / 10;
+			int remainder = number % 10;      //finds the last digit of the given number
+			reverse = reverse * 10 + remainder; //in rev store the reverse number
+			number = number / 10;             //removes the last digit from the number  
 		}
-		System.out.println("The reverse of the given number is: " + reverse);
+		System.out.println("The reverse of the given number is: " + reverse);   //printing the output
 	}
 }
 
