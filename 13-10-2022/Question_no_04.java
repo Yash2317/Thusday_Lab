@@ -10,15 +10,15 @@ public class Sum_of_numbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		int size, i, sum = 0;
+		Scanner sc=new Scanner(System.in);                 
+		int size, i, sum = 0;                                       //initialize the variables
 		System.out.println("Enter how many number you want to add: ");
-		size = sc.nextInt();
-		int arry[] = new int[size];
+		size = sc.nextInt();                                        //accepting the size of the array
+		int arry[] = new int[size];                                 
 		System.out.println("Enter the  numbers :");
 		for (i = 0; i < size; i++) {
 			arry[i] = sc.nextInt();
-			if (arry[i] > 0) {           //to accept online positive numbers
+			if (arry[i] > 0) {                                  //to accept online positive numbers
 				sum = sum + arry[i];
 			}
 		}
