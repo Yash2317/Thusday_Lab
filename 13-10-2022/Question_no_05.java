@@ -32,7 +32,7 @@ int fp=10/2;                           //Taken the first point and given as the 
 int sp=10/2;                           //Taken the second and given as the center
 for(int row=1;row<=10;row++) {         //for row
 	for(int col=0;col<=10;col++) {  //for column
-		if(col==fp || col==sp || row==8/2 && col>fp && col<sp && col%2==0)   //if condition to print A
+		if(col==fp || col==sp || row==8/2 && col>fp && col<sp && col%2==0)   //if condition to print using OR, AND and Modulus operater. 
 			System.out.print("a");
 		else
 			System.out.print(" ");
@@ -44,3 +44,16 @@ for(int row=1;row<=10;row++) {         //for row
 	}
 
 }
+
+/*
+Output
+     a     
+    a a    
+   a   a   
+  a a a a  
+ a       a 
+a         a
+           
+           
+           
+           
