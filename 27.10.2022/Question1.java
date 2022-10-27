@@ -1,18 +1,18 @@
 /*Lab Q1: WAP to craete  ATM  where customer enter our details ,pin and withdrawal cash or deposit cash.. 
  In this program you have to use encapculation for hinding user
   details and inheritance,polymorphism and interface.*/
-package Thursday27;
+package Thursday27;                               // //interface
 
 public interface process {
 	public void pro();
 }
 
-package Thursday27;
+package Thursday27;                              // encapsulation
 
-public class Private_fields {
+public class Private_fields {                 
 	private int pass;
 	private int ac_bal = 1000;
-
+                                                //we used getter setter methods for we want variable in different  class
 	public int getPass() {
 		return pass;
 	}
@@ -33,7 +33,7 @@ public class Private_fields {
 		return ac_bal;
 	}
 
-	public void setAc_balcredit(int crebit) {
+	public void setAc_balcredit(int crebit) {       //deposit cash
 		this.ac_bal += crebit;
 		// db method for debit process
 	}
@@ -42,7 +42,7 @@ public class Private_fields {
 		return ac_bal;
 	}
 
-	public void setAc_baldebit(int dedit) {
+	public void setAc_baldebit(int dedit) {       //withdrawal cash
 		this.ac_bal -= dedit;
 	}
 }
@@ -84,11 +84,11 @@ public class Bank extends Private_fields implements process {
 		int choice;
 		char ans;
 		do {
-			System.out.println("Choose the Option\n1.Withddraw \n2.Deposit ");
+			System.out.println("Choose the Option\n1.Withddraw \n2.Deposit ");              //Choice for the user
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
-				System.out.println("Enter the Amount you want to Deposit:  ");
+				System.out.println("Enter the Amount you want to Deposit:  ");          //For deposit
 				user_bal = sc.nextInt();
 				obj.setAc_balcredit(user_bal);
 				System.out.println("Deposit amout is Rs." + user_bal);
@@ -96,7 +96,7 @@ public class Bank extends Private_fields implements process {
 
 				break;
 			case 2:
-				System.out.println("Enter the Amount you want to Withdraw: ");
+				System.out.println("Enter the Amount you want to Withdraw: ");         //For withdraw
 				user_bal = sc.nextInt();
 				obj.setAc_baldebit(user_bal);
 				if (obj.getAc_baldebit() >= 0) {
