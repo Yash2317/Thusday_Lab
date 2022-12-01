@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Atm_test 
+public class Atm 
 {
 	static char ans;
 	static int ch;
